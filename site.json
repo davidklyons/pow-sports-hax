@@ -1,0 +1,43 @@
+{
+  "id": "b6ea4b09-0eab-4d06-8020-8540d2b53a48",
+  "title": "pow-sports-hax",
+  "author": "",
+  "description": "",
+  "license": "by-sa",
+  "metadata": {
+    "author": {},
+    "site": {
+      "settings": {
+        "lang": "en",
+        "canonical": true
+      },
+      "name": "pow-sports-hax",
+      "domain": null,
+      "created": 1765751366,
+      "updated": 1765751366
+    },
+    "theme": {
+      "variables": {}
+    },
+    "node": {
+      "fields": {}
+    }
+  },
+  "items": [
+    {
+      "id": "item-79d81be7-b0bd-459a-a883-968f3076e715",
+      "indent": 0,
+      "location": "pages/item-79d81be7-b0bd-459a-a883-968f3076e715/index.html",
+      "slug": "welcome",
+      "order": 0,
+      "parent": null,
+      "title": "Welcome to pow-sports-hax",
+      "description": "",
+      "metadata": {
+        "created": 1765751366,
+        "updated": 1765751366
+      }
+    }
+  ],
+  "location": "/_sites/pow-sports-hax/index.html"
+}
