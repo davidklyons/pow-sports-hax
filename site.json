@@ -73,6 +73,22 @@
         "created": 1765751366,
         "updated": 1765751366
       }
+    },
+    {
+      "id": "item-7dbdc902-9652-4e80-8aa4-bcb293f4a409",
+      "indent": 0,
+      "location": "pages/item-7dbdc902-9652-4e80-8aa4-bcb293f4a409/index.html",
+      "slug": "welcome/page",
+      "order": 0,
+      "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1765761606,
+        "updated": 1765761606,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
