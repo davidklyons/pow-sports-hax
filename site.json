@@ -25,7 +25,7 @@
         "gaID": null
       },
       "created": 1765751366,
-      "updated": 1765761816,
+      "updated": 1765761833,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -99,15 +99,19 @@
       "indent": 0,
       "location": "pages/item-d2c649a9-280c-4f4e-a62e-7bc644f0c859/index.html",
       "slug": "welcome/page-1",
-      "order": 0,
+      "order": 1,
       "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
-      "title": "Page",
-      "description": "",
+      "title": "About PSYBA",
+      "description": "\n",
       "metadata": {
         "created": 1765761705,
-        "updated": 1765761705,
-        "images": [],
-        "videos": []
+        "updated": 1765761833,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     },
     {
