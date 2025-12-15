@@ -105,6 +105,22 @@
         "images": [],
         "videos": []
       }
+    },
+    {
+      "id": "item-3be3798f-d46a-4208-ad13-b189088c01fe",
+      "indent": 0,
+      "location": "pages/item-3be3798f-d46a-4208-ad13-b189088c01fe/index.html",
+      "slug": "welcome/page-2",
+      "order": 2,
+      "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1765761711,
+        "updated": 1765761711,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
