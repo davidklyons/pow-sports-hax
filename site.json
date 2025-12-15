@@ -55,22 +55,6 @@
         "created": 1765751366,
         "updated": 1765751366
       }
-    },
-    {
-      "id": "item-e7c4c35f-08ef-434e-b457-138e1cb813c0",
-      "indent": 0,
-      "location": "pages/item-e7c4c35f-08ef-434e-b457-138e1cb813c0/index.html",
-      "slug": "welcome/page/page",
-      "order": 1,
-      "parent": null,
-      "title": "Page",
-      "description": "",
-      "metadata": {
-        "created": 1765760146,
-        "updated": 1765760146,
-        "images": [],
-        "videos": []
-      }
     }
   ]
 }
