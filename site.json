@@ -55,7 +55,22 @@
         "created": 1765751366,
         "updated": 1765751366
       }
+    },
+    {
+      "id": "item-88d7aeaf-317d-4fca-b039-457b7b0d0af7",
+      "indent": 0,
+      "location": "pages/item-88d7aeaf-317d-4fca-b039-457b7b0d0af7/index.html",
+      "slug": "welcome/page",
+      "order": 0,
+      "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1765760138,
+        "updated": 1765760138,
+        "images": [],
+        "videos": []
+      }
     }
-  ],
-  "location": "/_sites/pow-sports-hax/index.html"
+  ]
 }
