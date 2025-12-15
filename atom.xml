@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>pow-sports-hax</title>
   <link href="/atom.xml" rel="self" />
-  <subtitle></subtitle>
+  <subtitle>own course</subtitle>
   <updated>1970-01-21T10:29:11.366Z</updated>
   <author>
       <name></name>
