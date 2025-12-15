@@ -121,22 +121,6 @@
         "images": [],
         "videos": []
       }
-    },
-    {
-      "id": "item-cdc00f22-bda1-4d00-b761-ed8a677e7e02",
-      "indent": 0,
-      "location": "pages/item-cdc00f22-bda1-4d00-b761-ed8a677e7e02/index.html",
-      "slug": "welcome/page-3",
-      "order": 1,
-      "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
-      "title": "Page",
-      "description": "",
-      "metadata": {
-        "created": 1765761753,
-        "updated": 1765761753,
-        "images": [],
-        "videos": []
-      }
     }
   ]
 }
