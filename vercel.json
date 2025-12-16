@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/api/menu", "destination": "/api/menu.json" },
+    { "source": "/api/schedule", "destination": "/api/schedule.json" },
+
+    { "source": "/", "destination": "/welcome/page" },
+    { "source": "/about", "destination": "/welcome/page-1" },
+    { "source": "/schedule", "destination": "/welcome/page-2" },
+
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

@@ -1,14 +1,14 @@
 console.log("CUSTOM.JS LOADED ✅", document.baseURI);
 
 // MENU API
-fetch(`${document.baseURI}api/menu.json`)
+fetch(`/api/menu.json`)
   .then(res => res.json())
   .then(data => {
     console.log("MENU DATA:", data);
   });
 
 // SCHEDULE API
-fetch(`${document.baseURI}api/schedule.json`)
+fetch(`/api/schedule.json`)
   .then(res => res.json())
   .then(data => {
     console.log("SCHEDULE DATA:", data);
