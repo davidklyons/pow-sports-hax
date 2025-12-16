@@ -1,3 +1,5 @@
+console.log("CUSTOM.JS LOADED ✅", document.baseURI);
+
 // MENU API
 fetch(`${document.baseURI}api/menu.json`)
   .then(res => res.json())

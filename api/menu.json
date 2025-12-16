@@ -1,0 +1,8 @@
+{
+  "title": "PSYBA Main Menu",
+  "items": [
+    { "title": "Home", "slug": "/welcome/page" },
+    { "title": "About PSYBA", "slug": "/welcome/page-1" },
+    { "title": "Schedule", "slug": "/welcome/page-2" }
+  ]
+}
