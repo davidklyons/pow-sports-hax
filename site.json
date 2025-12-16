@@ -153,6 +153,22 @@
         "locked": false,
         "readtime": 1
       }
+    },
+    {
+      "id": "item-15dc6f41-189a-4a1b-bce0-d55bf78ef013",
+      "indent": 0,
+      "location": "pages/item-15dc6f41-189a-4a1b-bce0-d55bf78ef013/index.html",
+      "slug": "welcome/page-1",
+      "order": 4,
+      "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1765857894,
+        "updated": 1765857894,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
