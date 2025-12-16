@@ -25,7 +25,7 @@
         "gaID": null
       },
       "created": 1765751366,
-      "updated": 1765849095,
+      "updated": 1765849109,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -102,10 +102,10 @@
       "order": 1,
       "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
       "title": "About PSYBA",
-      "description": "\n",
+      "description": "\n      \n        About PSYBA\n        \n          Pow Sports Youth Basketball Academy (PSYBA) is a nonprofit youth\n          basketball organization focused on skill development, sportsmanship,\n        ",
       "metadata": {
         "created": 1765761705,
-        "updated": 1765761833,
+        "updated": 1765849109,
         "images": {},
         "videos": {},
         "published": true,
