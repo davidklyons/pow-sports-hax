@@ -16,8 +16,8 @@ class PsybaSiteFooter extends HTMLElement {
           © ${year} Pow Sports Youth Basketball Academy
         </p>
         <p style="margin:8px 0; font-size:.9rem;">
-          <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="/welcome/page-1">About</a> |
-          <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="/welcome/page-2">Schedule</a> |
+          <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="/about">About</a> |
+          <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="/schedule">Schedule</a> |
           <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="#">Contact</a>
         </p>
       </footer>
