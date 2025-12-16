@@ -61,23 +61,6 @@
   },
   "items": [
     {
-      "id": "item-79d81be7-b0bd-459a-a883-968f3076e715",
-      "indent": 0,
-      "location": "pages/item-79d81be7-b0bd-459a-a883-968f3076e715/index.html",
-      "slug": "welcome",
-      "order": 6,
-      "parent": null,
-      "title": "Welcome to pow-sports-hax",
-      "description": "",
-      "metadata": {
-        "created": 1765751366,
-        "updated": 1765859784,
-        "published": true,
-        "locked": false,
-        "status": ""
-      }
-    },
-    {
       "id": "item-7dbdc902-9652-4e80-8aa4-bcb293f4a409",
       "indent": 0,
       "location": "pages/item-7dbdc902-9652-4e80-8aa4-bcb293f4a409/index.html",
