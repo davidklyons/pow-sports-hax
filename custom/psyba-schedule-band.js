@@ -1,15 +1,16 @@
 class PsybaScheduleBand extends HTMLElement {
   async connectedCallback() {
-    this.innerHTML = `
-      <div style="padding:16px;border:2px solid red;">
-        SCHEDULE BAND LOADED ✅ (vanilla)<br/>
-        Loading schedule...
-      </div>
-    `;
+    this.innerHTML = `<section style="padding:16px;max-width:1000px;margin:0 auto;">
+      <h2>Upcoming Games</h2>
+      <div>Loading schedule...</div>
+    </section>`;
 
     try {
       const res = await fetch("/api/schedule.json");
       const games = await res.json();
+
+      // ✅ ensure the custom element is registered before we inject it
+      await customElements.whenDefined("psyba-game-card");
 
       this.innerHTML = `
         <section style="padding:16px;max-width:1000px;margin:0 auto;">
@@ -26,7 +27,7 @@ class PsybaScheduleBand extends HTMLElement {
         </section>
       `;
     } catch (e) {
-      this.innerHTML += `<div style="color:red;">Error loading schedule: ${e}</div>`;
+      this.innerHTML += `<div style="color:red;">Error loading schedule</div>`;
       console.error(e);
     }
   }
