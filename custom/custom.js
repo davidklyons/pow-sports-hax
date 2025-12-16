@@ -1,4 +1,6 @@
 // IMPORTS MUST BE FIRST
+import "https://cdn.jsdelivr.net/npm/@haxtheweb/design-design-design/lib/design-design-design.js";
+
 import "./psyba-hero-banner.js";
 import "./psyba-announcement-band.js";
 import "./psyba-about-band.js";
