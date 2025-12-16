@@ -22,5 +22,7 @@ import "./psyba-stats-band.js";
 import "./psyba-news-band.js";
 import "./psyba-site-footer.js";
 import "./psyba-schedule-band.js";
+import "../psyba-nav.js";
+
 
 console.log("PSYBA custom components registered");
