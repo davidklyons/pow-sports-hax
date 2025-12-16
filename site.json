@@ -169,6 +169,22 @@
         "images": [],
         "videos": []
       }
+    },
+    {
+      "id": "item-51cc6483-fa22-48c9-9aa7-3069af3632f3",
+      "indent": 0,
+      "location": "pages/item-51cc6483-fa22-48c9-9aa7-3069af3632f3/index.html",
+      "slug": "welcome/page-2",
+      "order": 5,
+      "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1765857899,
+        "updated": 1765857899,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
