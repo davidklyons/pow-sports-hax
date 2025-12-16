@@ -16,5 +16,8 @@
     "ghpages:build": "rm index.html && mv ghpages.html index.html && rm assets/babel* && rm build && rm wc-registry.json",
     "serve": "npx @haxtheweb/haxcms-nodejs",
     "dev": "NODE_ENV=development npm run serve"
+  },
+  "dependencies": {
+    "@haxtheweb/simple-cta": "^11.0.0"
   }
 }
