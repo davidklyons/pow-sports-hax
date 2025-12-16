@@ -6,3 +6,16 @@
 // https://github.com/haxtheweb/webcomponents/blob/master/elements/example-haxcms-theme/example-haxcms-theme.js
 // don't import that directory, we'd recommend copy and pasting it in here or
 // creating your own theme based on it
+
+/// ===============================
+// GLOBAL DARK MODE (HAXCMS SAFE)
+// ===============================
+console.log("SRC CUSTOM.JS LOADED");
+
+const darkStyle = document.createElement("style");
+darkStyle.textContent = `
+@media (prefers-color-scheme: dark) {
+  body { background:#0b1220 !important; color:#e5e7eb !important; }
+}
+`;
+document.head.appendChild(darkStyle);
