@@ -7,36 +7,16 @@
 // don't import that directory, we'd recommend copy and pasting it in here or
 // creating your own theme based on it
 
-// IMPORTS MUST BE FIRST
+// Write whatever additional code you want to be included
+/// ===============================
+// GLOBAL DARK MODE (HAXCMS SAFE)
+// ===============================
+console.log("SRC CUSTOM.JS LOADED");
 
-import "./psyba-hero-banner.js";
-import "./psyba-announcement-band.js";
-import "./psyba-about-band.js";
-import "./psyba-stats-band.js";
-import "./psyba-news-band.js";
-import "./psyba-site-footer.js";
-import "./psyba-nav.js";
-
-import "./psyba-game-card.js";     // BEFORE schedule band
-import "./psyba-news-card.js";     // (fine here too)
-
-import "./psyba-schedule-band.js"; // AFTER game-card
-
-//norm JS can run
-console.log("CUSTOM.JS LOADED", document.baseURI);
-
-// MENU API
-fetch(`/api/menu.json`)
-  .then((res) => res.json())
-  .then((data) => console.log("MENU DATA:", data))
-  .catch((e) => console.error("MENU FETCH FAILED:", e));
-
-// SCHEDULE API
-fetch(`/api/schedule.json`)
-  .then((res) => res.json())
-  .then((data) => console.log("SCHEDULE DATA:", data))
-  .catch((e) => console.error("SCHEDULE FETCH FAILED:", e));
-
-console.log("PSYBA custom components registered");
-
-customElements.define("psyba-game-card", PsybaGameCard);
+const darkStyle = document.createElement("style");
+darkStyle.textContent = `
+@media (prefers-color-scheme: dark) {
+  body { background:#0b1220 !important; color:#e5e7eb !important; }
+}
+`;
+document.head.appendChild(darkStyle);
