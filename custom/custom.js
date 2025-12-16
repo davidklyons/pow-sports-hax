@@ -1,15 +1,20 @@
-// ✅ IMPORTS MUST BE FIRST
+// IMPORTS MUST BE FIRST
+import "@haxtheweb/simple-cta/simple-cta.js";
 import "./psyba-hero-banner.js";
 import "./psyba-announcement-band.js";
 import "./psyba-about-band.js";
 import "./psyba-stats-band.js";
 import "./psyba-news-band.js";
 import "./psyba-site-footer.js";
-import "./psyba-schedule-band.js";
-import "./psyba-nav.js"; // ✅ make sure this file exists at the same level as custom.js
+import "./psyba-nav.js";
 
-// ✅ NOW normal JS can run
-console.log("CUSTOM.JS LOADED ✅", document.baseURI);
+import "./psyba-game-card.js";     // BEFORE schedule band
+import "./psyba-news-card.js";     // (fine here too)
+
+import "./psyba-schedule-band.js"; // AFTER game-card
+
+//norm JS can run
+console.log("CUSTOM.JS LOADED", document.baseURI);
 
 // MENU API
 fetch(`/api/menu.json`)
@@ -23,4 +28,4 @@ fetch(`/api/schedule.json`)
   .then((data) => console.log("SCHEDULE DATA:", data))
   .catch((e) => console.error("SCHEDULE FETCH FAILED:", e));
 
-console.log("PSYBA custom components registered ✅");
+console.log("PSYBA custom components registered");
