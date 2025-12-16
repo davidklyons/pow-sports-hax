@@ -25,7 +25,7 @@
         "gaID": null
       },
       "created": 1765751366,
-      "updated": 1765857231,
+      "updated": 1765857867,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -138,16 +138,20 @@
       "id": "item-418cdca7-1aad-4022-baba-f4e7ce0bb1d1",
       "indent": 0,
       "location": "pages/item-418cdca7-1aad-4022-baba-f4e7ce0bb1d1/index.html",
-      "slug": "welcome/page-1",
+      "slug": "roster",
       "order": 3,
       "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
-      "title": "Page",
-      "description": "",
+      "title": "Roster",
+      "description": "\n",
       "metadata": {
         "created": 1765857833,
-        "updated": 1765857833,
-        "images": [],
-        "videos": []
+        "updated": 1765857866,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     }
   ]
