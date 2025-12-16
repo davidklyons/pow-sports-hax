@@ -1,7 +1,36 @@
 
-<psyba-hero-banner></psyba-hero-banner>
+<psyba-hero-banner>
+      <section style="
+        display:block;
+        padding:48px 24px;
+        background:#1e40af;
+        color:white;
+        border-radius:24px;
+        margin-bottom:24px;
+      ">
+        <h1 style="margin:0 0 12px 0; font-size:2rem;">
+          Pow Sports Youth Basketball Academy
+        </h1>
+        <p style="margin:0; font-size:1.1rem; opacity:.9;">
+          Building skills, confidence, and teamwork for young athletes.
+        </p>
+      </section>
+
+    </psyba-hero-banner>
 <md-block markdown="&#60;psyba-nav&#62;&#60;/psyba-nav&#62;" accent-color="grey"></md-block>
-<psyba-announcement-band></psyba-announcement-band>
+<psyba-announcement-band>
+      <section style="
+        display:block;
+        padding:24px;
+        border:2px dashed #1e40af;
+        border-radius:16px;
+        margin-bottom:24px;
+      ">
+        <h2>Announcements</h2>
+        <p>Upcoming tryouts, events, and important updates.</p>
+      </section>
+
+    </psyba-announcement-band>
 <psyba-about-band>
       <section style="
         display:block;
@@ -20,42 +49,117 @@
         </p>
       </section>
 
-
     </psyba-about-band>
-<psyba-stats-band></psyba-stats-band>
-<psyba-news-band></psyba-news-band>
+<psyba-stats-band>
+      <section style="
+        display:block;
+        padding:32px 24px;
+        border:2px solid #1e40af;
+        border-radius:16px;
+        margin-bottom:24px;
+        text-align:center;
+      ">
+        <h2>Program Highlights</h2>
+
+        <div style="
+          display:grid;
+          grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));
+          gap:16px;
+          margin-top:16px;
+        ">
+          
+      <div>
+        <div style="font-size:1.5rem; font-weight:bold;">250+</div>
+        <div style="font-size:.9rem; opacity:.75;">Athletes</div>
+      </div>
+
+    
+          
+      <div>
+        <div style="font-size:1.5rem; font-weight:bold;">18</div>
+        <div style="font-size:.9rem; opacity:.75;">Teams</div>
+      </div>
+
+    
+          
+      <div>
+        <div style="font-size:1.5rem; font-weight:bold;">12</div>
+        <div style="font-size:.9rem; opacity:.75;">Coaches</div>
+      </div>
+
+    
+          
+      <div>
+        <div style="font-size:1.5rem; font-weight:bold;">10+</div>
+        <div style="font-size:.9rem; opacity:.75;">Years Active</div>
+      </div>
+
+    
+        </div>
+
+      </section>
+
+    </psyba-stats-band>
+<psyba-news-band>
+      <section style="
+        display:block;
+        padding:32px 24px;
+        background:#f1f5f9;
+        border-radius:16px;
+        margin-bottom:24px;
+      ">
+        <h2>Latest News</h2>
+
+        <div style="
+          display:grid;
+          grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+          gap:16px;
+          margin-top:16px;
+        ">
+          
+      <div style="padding:16px; border:1px solid #1e40af; border-radius:12px;">
+        <h3 style="margin-top:0;">Winter League Registration Open</h3>
+        <p style="margin:0;">Sign-ups are now open for the upcoming winter season.</p>
+      </div>
+
+    
+          
+      <div style="padding:16px; border:1px solid #1e40af; border-radius:12px;">
+        <h3 style="margin-top:0;">Coaching Applications</h3>
+        <p style="margin:0;">We are accepting applications for volunteer coaches.</p>
+      </div>
+
+    
+          
+      <div style="padding:16px; border:1px solid #1e40af; border-radius:12px;">
+        <h3 style="margin-top:0;">Community Fundraiser</h3>
+        <p style="margin:0;">Join us for our annual fundraiser to support youth programs.</p>
+      </div>
+
+    
+        </div>
+
+      </section>
+
+    </psyba-news-band>
 <psyba-schedule-band>
         <section style="padding:16px;max-width:1000px;margin:0 auto;">
           <h2>Upcoming Games</h2>
           
-            <div style="padding:12px;margin:8px 0;border:1px solid rgba(0,0,0,.2);border-radius:12px;">
-              <strong>2025-01-10 — 6:00 PM</strong><br>
-              PSYBA Tigers vs State College Hawks<br>
-              <em>Main Gym</em>
-            </div>
-
+            <psyba-game-card date="2025-01-10" time="6:00 PM" home="PSYBA Tigers" away="State College Hawks" location="Main Gym"></psyba-game-card>
 
           
-            <div style="padding:12px;margin:8px 0;border:1px solid rgba(0,0,0,.2);border-radius:12px;">
-              <strong>2025-01-17 — 5:30 PM</strong><br>
-              PSYBA Tigers vs Altoona Lions<br>
-              <em>Main Gym</em>
-            </div>
-
+            <psyba-game-card date="2025-01-17" time="5:30 PM" home="PSYBA Tigers" away="Altoona Lions" location="Main Gym"></psyba-game-card>
 
           
-            <div style="padding:12px;margin:8px 0;border:1px solid rgba(0,0,0,.2);border-radius:12px;">
-              <strong>2025-01-24 — 7:00 PM</strong><br>
-              PSYBA Tigers vs Centre County Bears<br>
-              <em>Community Center</em>
-            </div>
-
+            <psyba-game-card date="2025-01-24" time="7:00 PM" home="PSYBA Tigers" away="Centre County Bears" location="Community Center"></psyba-game-card>
 
           
         </section>
 
-
       </psyba-schedule-band>
+<md-block markdown="&#60;psyba-schedule-band&#62;&#60;/psyba-schedule-band&#62;
+" accent-color="grey"></md-block>
 <psyba-site-footer>
       <footer style="
         display:block;
@@ -70,13 +174,11 @@
           © 2025 Pow Sports Youth Basketball Academy
         </p>
         <p style="margin:8px 0; font-size:.9rem;">
-          <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="/welcome/page-1">About</a> |
-          <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="/welcome/page-2">Schedule</a> |
+          <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="/about">About</a> |
+          <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="/schedule">Schedule</a> |
           <a style="color:inherit; margin:0 8px; text-decoration:underline;" href="#">Contact</a>
         </p>
 
-
       </footer>
-
 
     </psyba-site-footer>

@@ -15,11 +15,13 @@ class PsybaScheduleBand extends HTMLElement {
         <section style="padding:16px;max-width:1000px;margin:0 auto;">
           <h2>Upcoming Games</h2>
           ${games.map(g => `
-            <div style="padding:12px;margin:8px 0;border:1px solid rgba(0,0,0,.2);border-radius:12px;">
-              <strong>${g.date} — ${g.time}</strong><br/>
-              ${g.home} vs ${g.away}<br/>
-              <em>${g.location}</em>
-            </div>
+            <psyba-game-card
+              date="${g.date}"
+              time="${g.time}"
+              home="${g.home}"
+              away="${g.away}"
+              location="${g.location}"
+            ></psyba-game-card>
           `).join("")}
         </section>
       `;
