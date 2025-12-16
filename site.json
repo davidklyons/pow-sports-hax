@@ -133,6 +133,22 @@
         "locked": false,
         "readtime": 1
       }
+    },
+    {
+      "id": "item-418cdca7-1aad-4022-baba-f4e7ce0bb1d1",
+      "indent": 0,
+      "location": "pages/item-418cdca7-1aad-4022-baba-f4e7ce0bb1d1/index.html",
+      "slug": "welcome/page-1",
+      "order": 3,
+      "parent": "item-79d81be7-b0bd-459a-a883-968f3076e715",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1765857833,
+        "updated": 1765857833,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
