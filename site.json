@@ -25,7 +25,7 @@
         "gaID": null
       },
       "created": 1765751366,
-      "updated": 1766041514,
+      "updated": 1766050542,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -71,7 +71,7 @@
       "description": "Home",
       "metadata": {
         "created": 1765761606,
-        "updated": 1766032726,
+        "updated": 1766050542,
         "images": {},
         "videos": {},
         "published": true,

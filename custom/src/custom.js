@@ -12,15 +12,28 @@
 // ===============================
 // custom/src/custom.js
 
+import "./cli/psyba-nav.js";
+import "./cli/psyba-menu-drawer.js";
+
 import "./cli/psyba-site-header.js";
 import "./cli/psyba-site-footer.js";
-import "./cli/psyba-menu-drawer.js";
-import "./cli/psyba-hero-band.js";
-import "./cli/psyba-section-title.js";
-import "./cli/psyba-cta-band.js";
+
+import "./cli/psyba-hero-banner.js";
+
+import "./cli/psyba-announcement-band.js";
+import "./cli/psyba-about-band.js";
+import "./cli/psyba-stats-band.js";
+
+import "./cli/psyba-news-band.js";
+import "./cli/psyba-news-card.js";
+
 import "./cli/psyba-schedule-band.js";
 import "./cli/psyba-game-card.js";
+
 import "./cli/psyba-standings-band.js";
+
+import "./cli/psyba-section-title.js";
+import "./cli/psyba-cta-band.js";
 import "./cli/psyba-link-card.js";
 
 console.log("SRC CUSTOM.JS LOADED");
