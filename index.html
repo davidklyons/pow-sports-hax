@@ -109,6 +109,23 @@
       min-height: 50px;
       min-width: 200px;
     }
+    
+    /* DDD CSS Variables Fix */
+    :root {
+      --ddd-theme-primary: #000000;
+      --ddd-theme-accent: #ffffff;
+      --ddd-spacing-2: 8px;
+      --ddd-spacing-3: 12px;
+      --ddd-spacing-4: 16px;
+      --ddd-font-navigation: sans-serif;
+      --ddd-font-size-s: 14px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ddd-theme-primary: #ffffff;
+        --ddd-theme-accent: #1a1a1a;
+      }
+    }
   </style>
   <style id="loadingstyles">
     haxcms-site-builder {

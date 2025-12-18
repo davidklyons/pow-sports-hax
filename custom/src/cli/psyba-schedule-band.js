@@ -6,12 +6,6 @@ import { LitElement, html, css } from "lit";
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
 
-/**
- * `psyba-schedule-band`
- *
- * @demo index.html
- * @element psyba-schedule-band
- */
 export class PsybaScheduleBand extends DDDSuper(I18NMixin(LitElement)) {
   static get tag() {
     return "psyba-schedule-band";
@@ -21,10 +15,8 @@ export class PsybaScheduleBand extends DDDSuper(I18NMixin(LitElement)) {
     super();
     this.title = "";
     this.t = this.t || {};
-    this.t = {
-      ...this.t,
-      title: "Title",
-    };
+    this.t = { ...this.t, title: "Title" };
+
     this.registerLocalization({
       context: this,
       localesPath:
@@ -33,13 +25,11 @@ export class PsybaScheduleBand extends DDDSuper(I18NMixin(LitElement)) {
       locales: ["ar", "es", "hi", "zh"],
     });
 
-    // schedule data state
     this.games = [];
     this.loading = true;
     this.error = "";
   }
 
-  // Lit reactive properties
   static get properties() {
     return {
       ...super.properties,
@@ -50,26 +40,31 @@ export class PsybaScheduleBand extends DDDSuper(I18NMixin(LitElement)) {
     };
   }
 
-  // Lit scoped styles
   static get styles() {
     return [
       super.styles,
       css`
         :host {
           display: block;
-          color: var(--ddd-theme-primary);
-          background-color: var(--ddd-theme-accent);
           font-family: var(--ddd-font-navigation);
+          color: var(--psyba-on-surface, #111827);
         }
+
         .wrapper {
           margin: var(--ddd-spacing-2);
           padding: var(--ddd-spacing-4);
         }
+
+        h3 {
+          margin: 0;
+          font-size: var(--ddd-font-size-l);
+          color: var(--psyba-on-surface, #111827);
+        }
+
         h3 span {
-          font-size: var(
-            --psyba-schedule-band-label-font-size,
-            var(--ddd-font-size-s)
-          );
+          font-size: var(--ddd-font-size-s);
+          color: var(--psyba-muted, rgba(17, 24, 39, 0.8));
+          margin-right: var(--ddd-spacing-2);
         }
 
         .grid {
@@ -89,7 +84,7 @@ export class PsybaScheduleBand extends DDDSuper(I18NMixin(LitElement)) {
   async firstUpdated() {
     try {
       const res = await fetch("/api/schedule.json", { cache: "no-store" });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      res.ok || (() => { throw new Error(`HTTP ${res.status}`); })();
       this.games = await res.json();
     } catch (e) {
       console.error(e);
@@ -99,7 +94,6 @@ export class PsybaScheduleBand extends DDDSuper(I18NMixin(LitElement)) {
     }
   }
 
-  // Lit render the HTML
   render() {
     return html`
       <div class="wrapper">
@@ -109,7 +103,6 @@ export class PsybaScheduleBand extends DDDSuper(I18NMixin(LitElement)) {
         </h3>
 
         ${this.loading ? html`<div>Loading schedule...</div>` : ""}
-
         ${this.error ? html`<div class="error">${this.error}</div>` : ""}
 
         ${!this.loading && !this.error
@@ -135,9 +128,6 @@ export class PsybaScheduleBand extends DDDSuper(I18NMixin(LitElement)) {
     `;
   }
 
-  /**
-   * haxProperties integration via file reference
-   */
   static get haxProperties() {
     return new URL(`./lib/${this.tag}.haxProperties.json`, import.meta.url).href;
   }
