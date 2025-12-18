@@ -1,4 +1,6 @@
 
+<psyba-nav></psyba-nav>
+<psyba-menu-drawer></psyba-menu-drawer>
 <psyba-hero-banner>
       <section style="
         display:block;
@@ -17,23 +19,6 @@
       </section>
 
     </psyba-hero-banner>
-<section style="max-width:1000px;margin:0 auto 24px auto; text-align:center;">
-   <h2 style="margin:0 0 6px 0;">Come watch us play</h2>
-
-  <p style="margin:0 auto 14px auto; max-width:700px; opacity:.85;">Meet our coaches, cheer on the Tigers, and see PSYBA in action at our next home
-    game.</p> <a href="/schedule" style="
-    display:inline-block;
-    padding:14px 18px;
-    border-radius:12px;
-    background:#1e40af;
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;">
-    See Upcoming Games →
-  </a>
-
-</section>
-<psyba-nav></psyba-nav>
 <psyba-announcement-band>
       <section style="
         display:block;
@@ -116,71 +101,18 @@
       </section>
 
     </psyba-stats-band>
-<psyba-news-band>
-      <section style="
-        display:block;
-        padding:32px 24px;
-        background:#f1f5f9;
-        border-radius:16px;
-        margin-bottom:24px;
-      ">
-        <h2>Latest News</h2>
-
-        <div style="
-          display:grid;
-          grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-          gap:16px;
-          margin-top:16px;
-        ">
-          
-      <div style="padding:16px; border:1px solid #1e40af; border-radius:12px;">
-        <h3 style="margin-top:0;">Winter League Registration Open</h3>
-        <p style="margin:0;">Sign-ups are now open for the upcoming winter season.</p>
-      </div>
-
-    
-          
-      <div style="padding:16px; border:1px solid #1e40af; border-radius:12px;">
-        <h3 style="margin-top:0;">Coaching Applications</h3>
-        <p style="margin:0;">We are accepting applications for volunteer coaches.</p>
-      </div>
-
-    
-          
-      <div style="padding:16px; border:1px solid #1e40af; border-radius:12px;">
-        <h3 style="margin-top:0;">Community Fundraiser</h3>
-        <p style="margin:0;">Join us for our annual fundraiser to support youth programs.</p>
-      </div>
-
-    
-        </div>
-
-      </section>
-
-    </psyba-news-band>
-<psyba-schedule-band>
+<psyba-news-band></psyba-news-band>
+<psyba-schedule-band title="Upcoming Games">
         <section style="padding:16px;max-width:1000px;margin:0 auto;">
           <h2>Upcoming Games</h2>
           
-                  <div style="padding:12px;margin:8px 0;border:1px solid rgba(0,0,0,.2);border-radius:12px;background:#fff;">
-                    <strong>2025-01-10 — 6:00 PM</strong><br>
-                    PSYBA Tigers vs State College Hawks<br>
-                    <em>Main Gym</em>
-                  </div>
+                  <psyba-game-card date="2025-01-10" time="6:00 PM" home="PSYBA Tigers" away="State College Hawks" location="Main Gym"></psyba-game-card>
 
                 
-                  <div style="padding:12px;margin:8px 0;border:1px solid rgba(0,0,0,.2);border-radius:12px;background:#fff;">
-                    <strong>2025-01-17 — 5:30 PM</strong><br>
-                    PSYBA Tigers vs Altoona Lions<br>
-                    <em>Main Gym</em>
-                  </div>
+                  <psyba-game-card date="2025-01-17" time="5:30 PM" home="PSYBA Tigers" away="Altoona Lions" location="Main Gym"></psyba-game-card>
 
                 
-                  <div style="padding:12px;margin:8px 0;border:1px solid rgba(0,0,0,.2);border-radius:12px;background:#fff;">
-                    <strong>2025-01-24 — 7:00 PM</strong><br>
-                    PSYBA Tigers vs Centre County Bears<br>
-                    <em>Community Center</em>
-                  </div>
+                  <psyba-game-card date="2025-01-24" time="7:00 PM" home="PSYBA Tigers" away="Centre County Bears" location="Community Center"></psyba-game-card>
 
                 
         </section>
