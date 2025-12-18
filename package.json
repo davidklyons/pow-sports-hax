@@ -1,16 +1,25 @@
 {
   "name": "pow-sports-hax",
   "version": "11.0.5",
+  "private": false,
   "description": "own course",
-  "main": "index.html",
-  "author": {
-    "name": "btopro"
+  "keywords": [
+    "hax",
+    "webcomponents",
+    "add"
+  ],
+  "homepage": "https://github.com/davidklyons/pow-sports-hax#readme",
+  "bugs": {
+    "url": "https://github.com/davidklyons/pow-sports-hax/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidklyons/pow-sports-hax.git"
   },
   "license": "Apache-2.0",
-  "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
+  "author": "btopro",
+  "type": "commonjs",
+  "main": "index.html",
   "scripts": {
     "start": "npm run serve",
     "ghpages:build": "rm index.html && mv ghpages.html index.html && rm assets/babel* && rm build && rm wc-registry.json",
@@ -19,5 +28,9 @@
   },
   "dependencies": {
     "@haxtheweb/simple-cta": "^11.0.0"
+  },
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public"
   }
 }

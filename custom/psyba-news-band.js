@@ -1,6 +1,11 @@
+if (!customElements.get("psyba-news-band")) {
+  // existing code below stays the same
+
+
+
 class PsybaNewsBand extends HTMLElement {
   connectedCallback() {
-    this.attachShadow({ mode: "open" });
+    if (!this.shadowRoot) this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
         section {
@@ -86,3 +91,4 @@ class PsybaNewsBand extends HTMLElement {
 }
 
 customElements.define("psyba-news-band", PsybaNewsBand);
+}

@@ -1,1 +1,1 @@
-// custom comment script here
+console.log("SRC CUSTOM.JS LOADED");const e=document.createElement("style");e.textContent="\n@media (prefers-color-scheme: dark) {\n  body { background:#0b1220 !important; color:#e5e7eb !important; }\n}\n",document.head.appendChild(e);

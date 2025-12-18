@@ -25,7 +25,7 @@
         "gaID": null
       },
       "created": 1765751366,
-      "updated": 1765873222,
+      "updated": 1766032582,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -110,10 +110,10 @@
       "order": 2,
       "parent": null,
       "title": "Schedule",
-      "description": "\n        \n          Upcoming Games\n          \n            \n              2025-01-10 — 6:00 PM\n              PSYBA Tigers vs State College Hawks\n              Main Gym\n            \n\n          \n       ",
+      "description": "Upcoming Games",
       "metadata": {
         "created": 1765761711,
-        "updated": 1765859784,
+        "updated": 1766032581,
         "images": {},
         "videos": {},
         "published": true,
