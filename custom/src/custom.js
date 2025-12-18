@@ -10,6 +10,8 @@
 /// ===============================
 // REGISTER CUSTOM COMPONENTS
 // ===============================
+// custom/src/custom.js
+
 import "./cli/psyba-site-header.js";
 import "./cli/psyba-site-footer.js";
 import "./cli/psyba-menu-drawer.js";
@@ -23,64 +25,39 @@ import "./cli/psyba-link-card.js";
 
 console.log("SRC CUSTOM.JS LOADED");
 
-/// ===============================
-// GLOBAL DARK MODE (HAXCMS SAFE)
-// ===============================
-const darkStyle = document.createElement("style");
-darkStyle.textContent = `
+const style = document.createElement("style");
+style.textContent = `
+/* LIGHT DEFAULTS */
+:root{
+  --psyba-surface: #ffffff;
+  --psyba-on-surface: #111827;
+  --psyba-muted: rgba(17, 24, 39, 0.8);
+  --psyba-border: rgba(0,0,0,.12);
+  --psyba-border-soft: rgba(0,0,0,.08);
+}
+
+/* OS / browser dark mode */
 @media (prefers-color-scheme: dark) {
-
-  /* Base page */
-  html, body {
-    background: #0b1220 !important;
-    color: #e5e7eb !important;
-  }
-
-  /* Make common text readable even when pages hard-code light colors */
-  h1, h2, h3, h4, h5, h6,
-  p, li, span, strong, em, a,
-  td, th, label, small {
-    color: #e5e7eb !important;
-  }
-
-  /* Links */
-  a {
-    text-decoration-color: rgba(229, 231, 235, 0.6) !important;
-  }
-
-  /* Generic borders so dashed / outlined sections still show */
-  section, article, main, header, footer, div {
-    border-color: rgba(148, 163, 184, 0.35) !important;
-  }
-
-  /* Tables (Roster) */
-  table {
-    background: #0f172a !important;
-    color: #e5e7eb !important;
-  }
-
-  thead, th {
-    background: #1e293b !important;
-    color: #f8fafc !important;
-  }
-
-  td {
-    background: transparent !important;
-    color: #e5e7eb !important;
-  }
-
-  /* Fix light cards / sections that use inline styles */
-  [style*="background:#fff"],
-  [style*="background: #fff"],
-  [style*="background:white"],
-  [style*="background: white"],
-  [style*="background:#f8fafc"],
-  [style*="background: #f8fafc"],
-  [style*="background:#f1f5f9"],
-  [style*="background: #f1f5f9"] {
-    background: #0f172a !important;
-    color: #e5e7eb !important;
+  :root{
+    --psyba-surface: #0f172a;
+    --psyba-on-surface: #e5e7eb;
+    --psyba-muted: rgba(229,231,235,0.85);
+    --psyba-border: rgba(148,163,184,0.35);
+    --psyba-border-soft: rgba(148,163,184,0.25);
   }
 }
+
+/* HAXcms / app-driven dark mode (covers most toggles) */
+html.dark, body.dark,
+:root[data-theme="dark"], body[data-theme="dark"],
+:root[theme="dark"], body[theme="dark"],
+:root[color-scheme="dark"], body[color-scheme="dark"],
+[data-theme="dark"], [theme="dark"], [color-scheme="dark"]{
+  --psyba-surface: #0f172a;
+  --psyba-on-surface: #e5e7eb;
+  --psyba-muted: rgba(229,231,235,0.85);
+  --psyba-border: rgba(148,163,184,0.35);
+  --psyba-border-soft: rgba(148,163,184,0.25);
+}
 `;
-document.head.appendChild(darkStyle);
+document.head.appendChild(style);
