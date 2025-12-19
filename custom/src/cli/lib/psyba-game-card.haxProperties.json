@@ -1,0 +1,48 @@
+﻿{
+  "canScale": false,
+  "canPosition": false,
+  "canEditSource": true,
+  "settings": {
+    "configure": [
+      {
+        "property": "date",
+        "title": "Date",
+        "inputMethod": "textfield"
+      },
+      {
+        "property": "time",
+        "title": "Time",
+        "inputMethod": "textfield"
+      },
+      {
+        "property": "home",
+        "title": "Home Team",
+        "inputMethod": "textfield"
+      },
+      {
+        "property": "away",
+        "title": "Away Team",
+        "inputMethod": "textfield"
+      },
+      {
+        "property": "location",
+        "title": "Location",
+        "inputMethod": "textfield"
+      }
+    ],
+    "advanced": []
+  },
+  "demoSchema": [
+    {
+      "tag": "psyba-game-card",
+      "properties": {
+        "date": "2025-01-10",
+        "time": "6:00 PM",
+        "home": "PSYBA Tigers",
+        "away": "State College Hawks",
+        "location": "Main Gym"
+      },
+      "content": ""
+    }
+  ]
+}

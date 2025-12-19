@@ -1,0 +1,30 @@
+﻿{
+  "canScale": false,
+  "canPosition": false,
+  "canEditSource": true,
+  "settings": {
+    "configure": [
+      {
+        "property": "title",
+        "title": "Title",
+        "inputMethod": "textfield"
+      },
+      {
+        "property": "href",
+        "title": "Link URL",
+        "inputMethod": "textfield"
+      }
+    ],
+    "advanced": []
+  },
+  "demoSchema": [
+    {
+      "tag": "psyba-link-card",
+      "properties": {
+        "title": "Learn More",
+        "href": "/about"
+      },
+      "content": "<p>Click to learn more about our programs.</p>"
+    }
+  ]
+}

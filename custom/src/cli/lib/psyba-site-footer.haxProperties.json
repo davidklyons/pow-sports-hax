@@ -1,0 +1,16 @@
+﻿{
+  "canScale": false,
+  "canPosition": false,
+  "canEditSource": true,
+  "settings": {
+    "configure": [],
+    "advanced": []
+  },
+  "demoSchema": [
+    {
+      "tag": "psyba-site-footer",
+      "properties": {},
+      "content": "<p>© 2025 PSYBA. All rights reserved.</p>"
+    }
+  ]
+}

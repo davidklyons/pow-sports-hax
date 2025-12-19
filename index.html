@@ -22,8 +22,13 @@
     }
   </script>
   <script type="importmap">
-    {
-      "scopes": {
+  {
+    "imports": {
+      "lit": "./build/es6/node_modules/lit/index.js",
+      "lit/": "./build/es6/node_modules/lit/",
+      "@haxtheweb/": "./build/es6/node_modules/@haxtheweb/"
+    },
+    "scopes": {
         "./custom/build/": {
           "@haxtheweb/": "./build/es6/node_modules/@haxtheweb/"
         }
@@ -238,7 +243,7 @@
     globalThis.HAXCMSContext="php";globalThis.__appCDN="./";</script>
   <script src="./build-haxcms.js"></script>
   <script src="./build.js"></script>
-  <script type="module" src="/custom/custom.js"></script>
+  
 
 </body>
 </html>
