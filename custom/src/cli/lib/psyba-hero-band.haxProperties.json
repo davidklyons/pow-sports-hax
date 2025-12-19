@@ -1,0 +1,24 @@
+﻿{
+  "canScale": false,
+  "canPosition": false,
+  "canEditSource": true,
+  "settings": {
+    "configure": [
+      {
+        "property": "title",
+        "title": "Title",
+        "inputMethod": "textfield"
+      }
+    ],
+    "advanced": []
+  },
+  "demoSchema": [
+    {
+      "tag": "psyba-hero-band",
+      "properties": {
+        "title": "Welcome to PSYBA"
+      },
+      "content": "<p>Building champions on and off the court.</p>"
+    }
+  ]
+}

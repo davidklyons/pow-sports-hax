@@ -1,0 +1,24 @@
+﻿{
+  "canScale": false,
+  "canPosition": false,
+  "canEditSource": true,
+  "settings": {
+    "configure": [
+      {
+        "property": "title",
+        "title": "Title",
+        "inputMethod": "textfield"
+      }
+    ],
+    "advanced": []
+  },
+  "demoSchema": [
+    {
+      "tag": "psyba-schedule-band",
+      "properties": {
+        "title": "Upcoming Games"
+      },
+      "content": ""
+    }
+  ]
+}
